@@ -1,0 +1,429 @@
+@use './variables' as *;
+
+@media screen and (min-width: 450px) {
+    .header {
+        .header-nav {
+            .header-nav-btns {
+                justify-content: center;
+
+                a {
+                    width: 23%;
+                }
+            }
+        }
+    }
+
+    .popular-slots-imgs-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-top: 15px;
+        padding-right: 5px;
+    
+        div {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            img {
+                width: 23%;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+                
+    
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                    box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+                    position: relative;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+
+    .how-to-start {
+        a {
+            width: 25%;
+        }
+
+        .how-to-start-list {
+            li {
+                .how-to-start-list-img {
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    .top-section-content {
+        width: 90%;
+
+        a {
+            width: 30%;
+        }
+    }
+
+    .wrapper-page {
+        .wrapper-content {
+            .main-content {
+                .our-sections {
+                    width: 80%;
+                    .popular-sections-content {
+                        div {
+                            div {
+                                img {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .terms-sect {
+                width: 80%;
+            }
+            .privacy {
+                width: 80%;
+            }
+        }
+    }
+    .top-section-content {
+        a {
+            width: 20%;
+        }
+    }
+    .khelostar-live-betting-current {
+        div {
+            img {
+                width: 70%;
+            }
+        }
+    }
+    
+    .cricket-betting {
+        div {
+            img {
+                width: 70%;
+            }
+        }
+    }
+    
+    .footbal-betting {
+        div {
+            img {
+                width: 70%;
+            }
+        }
+    }
+    
+    .tennis-betting {
+        div {
+            img {
+                width: 70%;
+            }
+        }
+    }
+    
+    .bonuses-list {
+        li {
+            div {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .header {
+        .header-nav {
+            .header-nav-btns {
+                justify-content: center;
+
+                a {
+                    width: 15%;
+                }
+            }
+        }
+    }
+
+    .header {
+        min-height: 115px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        border-bottom: $frequent-color 2px solid;
+        padding-bottom: 10px;
+
+        .header-nav {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
+
+    .header-nav {
+        .header-nav-btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+            justify-content: end !important;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                min-height: 30px;
+                border: $frequent-color 2px solid;
+                border-radius: 30px;
+                cursor: pointer;
+                font-size: clamp(12px, 5vw, 14px);
+                font-weight: 700;
+            }
+        }
+    }
+
+    .top-section-content {
+        width: 81%; 
+        a {
+            margin-top: 90px;
+        }
+    }
+
+    .popular-sections {
+        .popular-sections-content {
+            .casino-games {
+                div {
+                    img {
+                        width: 70% !important;
+                    }   
+                }
+            }
+        }
+    }
+
+    .popular-slots-imgs-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-top: 15px;
+        padding-right: 5px;
+    
+        div {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            img {
+                width: 8%;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+                flex: 1;
+    
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                    box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+                    position: relative;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+
+
+    .footer {
+        .footer-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 15px 30px 20px 0px;
+
+            .footer-nav-social-container {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .footer-nav {
+                    display: flex;
+                    justify-content: center;
+                    flex: 1;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: start;
+                    user-select: none;
+
+                    a {
+                        cursor: pointer;
+                        font-size: clamp(16px, 4vw, 26px);
+                        font-weight: 500;
+
+                        &:hover {
+                            color: $frequent-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .header {
+        min-height: 115px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        border-bottom: $frequent-color 2px solid;
+        padding-bottom: 10px;
+
+        .header-nav {
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
+
+    .footer {
+        margin-top: 50px;
+        border-top: $frequent-color 2px solid;
+        width: 100%;
+
+        .footer-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 15px 30px 20px 0px;
+
+            .footer-logo {
+                flex: 0.34;
+                display: flex;
+                justify-content: center;
+                user-select: none;
+
+                a {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    user-select: none;
+
+                    img {
+                        width: 160px;
+                        min-height: 50px;
+                        cursor: pointer;
+                        user-select: none;
+                    }
+                }
+            }
+
+            .footer-nav-social-container {
+                .footer-nav {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 35px;
+                }
+            }
+        }
+    }
+
+    .top-section-content {
+        width: 1200px;
+    }
+
+    .wrapper-page {
+        .wrapper-content {
+            .main-content {
+                .our-sections {
+                    width: 1200px;
+
+                    .popular-sections-content {
+                        div {
+                            div {
+                                img {
+                                    width: 85%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .terms-sect {
+                width: 1200px;
+            }
+
+            .privacy {
+                width: 1200px;
+            }
+        }
+    }
+
+    .top-section-content {
+        a {
+            width: 20%;
+        }
+    }
+
+    .khelostar-live-betting-current {
+        div {
+            img {
+                width: 85%;
+            }
+        }
+    }
+
+    .cricket-betting {
+        div {
+            img {
+                width: 85%;
+            }
+        }
+    }
+
+    .footbal-betting {
+        div {
+            img {
+                width: 85%;
+            }
+        }
+    }
+
+    .tennis-betting {
+        div {
+            img {
+                width: 85%;
+            }
+        }
+    }
+
+    .bonuses-list {
+        li {
+            div {
+                img {
+                    width: 85%;
+                }
+            }
+        }
+    }
+}

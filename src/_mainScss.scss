@@ -1,0 +1,880 @@
+@use './variables' as *;
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+    color: #e0e0e0;
+}
+
+a {
+    all: unset;
+}
+
+button {
+    all: unset;
+}
+
+.color-text {
+    color: $frequent-color;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+
+.wrapper-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+
+    .wrapper-content {
+        width: 100%;
+        background: linear-gradient(135deg, #252525, #333333);
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-section {
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 64%;
+    position: relative;
+    animation: backgroundSlide 50s infinite;
+    transition: 0.3s;
+
+    @keyframes backgroundSlide {
+
+        0%,
+        100% {
+            background-image: url(/public/criket.webp);
+            background-position: 90%;
+        }
+
+        33% {
+            background-image: url(/public/main-mega-try_11zon_11zon.webp);
+            background-position: 98%;
+        }
+
+        66% {
+            background-image: url(/public/tryman_11zon_11zon.webp);
+            background-position: 90%;
+        }
+    }
+
+    .top-section-container {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.78);
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+}
+
+.top-section-content {
+    width: 90%;
+    min-height: 400px;
+    padding-bottom: 15px;
+
+    h1 {
+        margin-top: 0px;
+        font-size: $font-h1;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: clamp(17px, 3vw, 20px);
+    }
+
+    a {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+        font-size: $top-section-font;
+        border: $frequent-color solid 2px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 500;
+        margin-top: 50px;
+
+        &:hover {
+            background: $frequent-gradient;
+            color: black;
+        }
+    }
+}
+
+.our-sections {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.popular-sections {
+    .popular-sections-intro {
+        h2 {
+            font-size: $font-h2;
+        }
+
+        p {
+            font-size: $frequent-font;
+        }
+    }
+}
+
+.popular-sections-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sports-betting {
+    width: 100%;
+
+    h3 {
+        font-size: $font-h3;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: $frequent-radius;
+        }
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.betting-exchange {
+    h3 {
+        font-size: $font-h3;
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.casino-games {
+    h3 {
+        font-size: $font-h3;
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border: 2px solid $frequent-color;
+            width: 100%;
+            border-radius: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+            margin-bottom: 30px;
+
+            &:hover {
+                transform: scale(1.08);
+                transition: 0.3s;
+                box-shadow: 0 0 8px 1px $frequent-color;
+            }
+        }
+    }
+}
+
+.live-betting {
+    h3 {
+        font-size: $font-h3;
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.khelostar-live-betting {
+    .khelostar-live-betting-intro {
+        h2 {
+            font-size: $font-h2;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: $frequent-font;
+        }
+    }
+}
+
+.khelostar-live-betting-current {
+    h3 {
+        font-size: $font-h3;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: $frequent-radius;
+        }
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.cricket-betting {
+    h4 {
+        font-size: $font-h4;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: $frequent-radius;
+        }
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.footbal-betting {
+    h4 {
+        font-size: $font-h4;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: $frequent-radius;
+        }
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.tennis-betting {
+    h4 {
+        font-size: $font-h4;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: $frequent-radius;
+        }
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.khelostar-casino {
+    .khelostar-casino-intro {
+        h2 {
+            font-size: $font-h2;
+        }
+
+        p {
+            font-size: $frequent-font;
+        }
+    }
+}
+
+.popular-khelostar-slots {
+    .popular-khelostar-slots-intro {
+        h3 {
+            font-size: $font-h3;
+        }
+
+        p {
+            font-size: $frequent-font;
+        }
+    }
+}
+
+.popular-slots-imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 15px;
+    padding-right: 5px;
+
+    div {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        img {
+            width: 35%;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            flex: 1;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.3s;
+                box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+                position: relative;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+.khelostar-casino-table-games {
+    h3 {
+        font-size: $font-h3;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: $frequent-radius;
+        }
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.khelostar-casino-live-dealers {
+    h3 {
+        font-size: $font-h3;
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.casino-live-dealers-imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 15px;
+    padding-right: 5px;
+
+    div {
+        display: flex;
+        gap: 5px;
+
+        img {
+            width: 33%;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.3s;
+                box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+            }
+        }
+    }
+}
+
+.khelostar-indian-games {
+    h3 {
+        font-size: $font-h3;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: $frequent-radius;
+        }
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.bonuses-and-promotions {
+    .bonuses-and-promotions-intro {
+        h2 {
+            font-size: $font-h2;
+        }
+
+        p {
+            font-size: $frequent-font;
+        }
+    }
+
+    .bonuses-and-promotions-container {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            div {
+                background-color: #e0e0e0;
+                border-radius: 20px;
+                min-width: 242px;
+                cursor: pointer;
+                position: relative;
+                background: linear-gradient(135deg, #252525, #333333);
+                box-shadow: 0 6px 12px rgba(202, 159, 50, 0.2);
+
+                h3 {
+                    color: $frequent-color;
+
+                    span {
+                        background-image: url(/public/yellow-arrow.svg);
+                    }
+                }
+            }
+
+            .sa {
+                width: 91.8%;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                user-select: none;
+            }
+
+            h3 {
+                cursor: pointer;
+                user-select: none;
+                display: flex;
+                color: black;
+                align-items: center;
+                gap: 20px;
+                font-size: clamp(15px, 4.5vw, 20px);
+
+            }
+
+            p {
+                font-size: clamp(12px, 4.5vw, 15px);
+                padding: 0px 15px;
+                margin-top: 0;
+            }
+
+        }
+    }
+}
+
+
+
+.bonuses-and-promotions {
+    padding-top: 30px;
+
+    .bonuses-and-promotions-intro {
+        h2 {
+            font-size: $font-h2;
+        }
+
+        p {
+            font-size: $frequent-font;
+        }
+    }
+}
+
+.how-to-start {
+    .how-to-start-intro {
+        h2 {
+            font-size: $font-h2;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-size: $frequent-font;
+        }
+    }
+
+    a {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+        font-size: $frequent-font;
+        border: $frequent-color solid 2px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 500;
+        margin-top: 40px;
+
+        &:hover {
+            background: $frequent-gradient;
+            color: black;
+        }
+    }
+}
+
+.how-to-start-list {
+    list-style: none;
+    padding: 0;
+    flex-basis: 50%;
+
+    li {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 15px;
+
+        .how-to-start-list-img {
+            display: flex;
+            justify-content: center;
+
+            img {
+                border: 2px solid $frequent-color;
+                width: 100%;
+                border-radius: 20px;
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                    box-shadow: 0 0 8px 1px $frequent-color;
+                }
+            }
+        }
+
+        h3 {
+            font-size: $font-h3;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: $frequent-font;
+            padding-left: 15px;
+        }
+    }
+}
+
+.khelostar-mobile-app-intro {
+    h2 {
+        font-size: $font-h2;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: $frequent-font;
+    }
+}
+
+.khelostar-mobile-app {
+    .khelostar-mobile-app-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+            border: 2px solid $frequent-color;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                border: 2px solid $frequent-color;
+                box-shadow: 0 0 15px 1px $frequent-color;
+                transition: 0.3s;
+
+                h3 {
+                    color: #ca9f32;
+                }
+            }
+
+            h3 {
+                font-size: $font-h3;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: $frequent-font;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+.faq {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 50px;
+
+    h2 {
+        color: white;
+        font-size: $font-h2;
+        margin-bottom: 35px;
+    }
+
+    .faq-question {
+        border-radius: 15px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        cursor: pointer;
+        font-size: $frequent-font;
+        margin-top: 0px;
+        color: $frequent-color;
+        border: 2px solid white;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid $frequent-color;
+            color: white;
+            transition: 0.3s;
+
+            .question-text {
+                border-top: 2px solid $frequent-color;
+            }
+        }
+
+        .title-question-plus {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 10px;
+            gap: 20px;
+
+            h3 {
+                padding-left: 15px;
+                user-select: none;
+            }
+
+            .anim-krest {
+                user-select: none;
+
+                img {
+                    width: 24px;
+                    height: 28px;
+                }
+
+                transition: 0.3s;
+            }
+
+            .anim-krest.active {
+                transform: rotate(45deg);
+                transition: 0.3s;
+            }
+        }
+
+        .question-text {
+            padding-bottom: 20px;
+            border-top: solid white 2px;
+            border-radius: 0px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-right: 15px;
+            display: none;
+            transition: 0.3s;
+            user-select: none;
+        }
+
+        .question-text.active {
+            display: block;
+            transition: 0.3s;
+        }
+    }
+}
+
+.player-reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px 0px;
+    margin-bottom: 100px;
+    h4 {
+        font-size: $font-h4;
+        user-select: none;
+    }
+    .player-reviews-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        user-select: none;
+        margin-top: 50px;
+        .revie-block {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            min-width: 285px;
+            max-width: 300px;
+            user-select: none;
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                user-select: none;
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    user-select: none;
+
+                }
+                span {
+                    color: #1a1a1a;
+                    font-weight: 700;
+                    user-select: none;
+                }
+            }
+            p {
+                color: #1a1a1a;
+                user-select: none;
+            }
+        }
+    }
+}
+
+.payments {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1a1a1a, #444444);
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    transition: 0.3s;
+    .games-prov {
+        
+        width: 100%;
+        overflow: hidden;
+        margin: 40px 0;
+        flex: none;
+        .games-prov-carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: scroll 30s linear infinite;
+            gap: 45px;
+            @keyframes scroll {
+                0% {
+                  transform: translateX(0);
+                }
+                100% {
+                  transform: translateX(100%);
+                }
+              }
+            img {
+                flex: 1;
+                width: 160px;
+                height: 30px;
+            }
+            .bets {
+                width: 70px;
+            }
+            .as {
+                width: 70px;
+                height: 30px;
+            }
+        }
+    }
+    h4 {
+        font-size: 17.5px;
+        color: white;
+    }
+    .payments-container {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 90px;
+            height: 37px;
+        }
+        .gg {
+            height: 45px;
+        }
+        .ms {
+            height: 28px;
+        }
+        .sas {
+            height: 31px;
+        }
+        .sma {
+            height: 17px;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@use './variables' as *;
+@use './adaptiveSite' as*;
+
+.privacy {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    .privacy-intro {
+        h1 {
+            font-size: $font-h1;
+            span {
+                font-weight: 700;
+            }
+        }
+        p {
+            font-size: $frequent-font;
+        }
+    }
+}
+
+.we-collect {
+    h2 {
+        font-size: $font-h2;
+    }
+}
+
+.personal-inf {
+    h3 {
+        font-size: $font-h3;
+    }
+    div {
+        font-size: $frequent-font;
+    }
+    ul {
+        list-style:  none;
+        padding: 0;
+        font-size: $frequent-font;
+    }
+}
+
+.gameplay-inf {
+    h3 {
+        font-size: $font-h3;
+    }
+    div {
+        font-size: $frequent-font;
+    }
+    ul {
+        list-style: none;
+        font-size: $frequent-font;
+        padding: 0;
+    }
+}
+.gameplay-inf {
+    h3 {
+        font-size: $font-h3;
+    }
+    div {
+        font-size: $frequent-font;
+    }
+    ul {
+        list-style: none;
+        font-size: $frequent-font;
+        padding: 0;
+    }
+}
+
+.tech-inf {
+    h3 {
+        font-size: $font-h3;
+    }
+    div {
+        font-size: $frequent-font;
+    }
+    ul {
+        list-style: none;
+        font-size: $frequent-font;
+        padding: 0;
+    }
+}
+
+.how-we-use {
+    h3 {
+        font-size: $font-h3;
+    }
+    .how-use-desk {
+        font-size: $frequent-font;
+    }
+    h4 {
+        font-size: $font-h4;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        font-size: $frequent-font;
+        li {
+            padding-top: 5px;
+        }
+    }
+    .legal-desk {
+        font-size: $frequent-font;
+    }
+}
+
+.how-we-share {
+    font-size: $frequent-font;
+    h3 {
+        font-size: $font-h2;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            h4 {
+                font-size: $font-h4;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.your-privacy-right {
+    font-size: $frequent-font;
+    h3 {
+        font-size: $font-h3;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    h4 {
+        font-size: $font-h4;
+    }
+}

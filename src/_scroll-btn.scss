@@ -1,0 +1,40 @@
+@use './variables' as *;
+
+.scroll-btn {
+    position: fixed;
+    z-index: 1000;
+    top: 90%;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+    background-color: white;
+    min-height: 50px;
+    border-radius: 15px;
+    color: yellow;
+    display: none;
+
+    div {
+        transform: rotate(-90deg);
+        height: 34px;
+        width: 34px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(/public/black-arrpw.svg);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: yellow;
+        transition: 0.3s;
+        background: linear-gradient(135deg, #252525, #333333);
+        div {
+            background-image: url(/public/yellow-arrow.svg);
+            transition: 0.3s;
+        }
+    }
+}

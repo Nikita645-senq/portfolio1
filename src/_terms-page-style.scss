@@ -1,0 +1,34 @@
+@use './variables' as *;
+@use './adaptiveSite' as*;
+
+.terms-sect {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    font-size: $frequent-font;
+    .terms-intro {
+        h1 {
+            font-size: $font-h1;
+        }
+        p {
+            font-size: $frequent-font;
+        }
+    }
+    p {
+        font-size: $frequent-font;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    h2 {
+        font-size: $font-h2;
+    }
+    h3 {
+        font-size: $font-h3;
+    }
+    strong {
+        padding-top: 10px;
+    }
+}

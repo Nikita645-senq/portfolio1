@@ -1,0 +1,1390 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  color: #e0e0e0;
+}
+
+a {
+  all: unset;
+}
+
+button {
+  all: unset;
+}
+
+.color-text {
+  color: #ca9f32;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.wrapper-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper-page .wrapper-content {
+  width: 100%;
+  background: linear-gradient(135deg, #252525, #333333);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-section {
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 64%;
+  position: relative;
+  animation: backgroundSlide 50s infinite;
+  transition: 0.3s;
+}
+@keyframes backgroundSlide {
+  0%, 100% {
+    background-image: url(/public/criket.webp);
+    background-position: 90%;
+  }
+  33% {
+    background-image: url(/public/main-mega-try_11zon_11zon.webp);
+    background-position: 98%;
+  }
+  66% {
+    background-image: url(/public/tryman_11zon_11zon.webp);
+    background-position: 90%;
+  }
+}
+.top-section .top-section-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.78);
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.top-section-content {
+  width: 90%;
+  min-height: 400px;
+  padding-bottom: 15px;
+}
+.top-section-content h1 {
+  margin-top: 0px;
+  font-size: clamp(28px, 5vw, 48px);
+}
+.top-section-content p {
+  font-weight: 300;
+  font-size: clamp(17px, 3vw, 20px);
+}
+.top-section-content a {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  font-size: clamp(14px, 2vw, 24px);
+  border: #ca9f32 solid 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.top-section-content a:hover {
+  background: linear-gradient(180deg, #F0D670 0%, #BB891A 70.86%);
+  color: black;
+}
+
+.our-sections {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.popular-sections .popular-sections-intro h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+.popular-sections .popular-sections-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.popular-sections-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sports-betting {
+  width: 100%;
+}
+.sports-betting h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.sports-betting div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.sports-betting div img {
+  width: 100%;
+  border-radius: 20px;
+}
+.sports-betting p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.betting-exchange h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.betting-exchange p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.casino-games h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.casino-games p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.casino-games div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.casino-games div img {
+  width: 100%;
+  border: 2px solid #ca9f32;
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.casino-games div img:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  box-shadow: 0 0 8px 1px #ca9f32;
+}
+
+.live-betting h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.live-betting p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.khelostar-live-betting .khelostar-live-betting-intro h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+  font-weight: 700;
+}
+.khelostar-live-betting .khelostar-live-betting-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.khelostar-live-betting-current h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.khelostar-live-betting-current div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.khelostar-live-betting-current div img {
+  width: 100%;
+  border-radius: 20px;
+}
+.khelostar-live-betting-current p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.cricket-betting h4 {
+  font-size: clamp(16px, 3.5vw, 28px);
+}
+.cricket-betting div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.cricket-betting div img {
+  width: 100%;
+  border-radius: 20px;
+}
+.cricket-betting p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.footbal-betting h4 {
+  font-size: clamp(16px, 3.5vw, 28px);
+}
+.footbal-betting div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footbal-betting div img {
+  width: 100%;
+  border-radius: 20px;
+}
+.footbal-betting p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.tennis-betting h4 {
+  font-size: clamp(16px, 3.5vw, 28px);
+}
+.tennis-betting div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tennis-betting div img {
+  width: 100%;
+  border-radius: 20px;
+}
+.tennis-betting p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.khelostar-casino .khelostar-casino-intro h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+.khelostar-casino .khelostar-casino-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.popular-khelostar-slots .popular-khelostar-slots-intro h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.popular-khelostar-slots .popular-khelostar-slots-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.popular-slots-imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 15px;
+  padding-right: 5px;
+}
+.popular-slots-imgs-container div {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.popular-slots-imgs-container div img {
+  width: 35%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 1;
+}
+.popular-slots-imgs-container div img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+  position: relative;
+  z-index: 0;
+}
+
+.khelostar-casino-table-games h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.khelostar-casino-table-games div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.khelostar-casino-table-games div img {
+  width: 100%;
+  border-radius: 20px;
+}
+.khelostar-casino-table-games p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.khelostar-casino-live-dealers h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.khelostar-casino-live-dealers p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.casino-live-dealers-imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 15px;
+  padding-right: 5px;
+}
+.casino-live-dealers-imgs-container div {
+  display: flex;
+  gap: 5px;
+}
+.casino-live-dealers-imgs-container div img {
+  width: 33%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.casino-live-dealers-imgs-container div img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+}
+
+.khelostar-indian-games h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.khelostar-indian-games div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.khelostar-indian-games div img {
+  width: 100%;
+  border-radius: 20px;
+}
+.khelostar-indian-games p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.bonuses-and-promotions .bonuses-and-promotions-intro h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+.bonuses-and-promotions .bonuses-and-promotions-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.bonuses-and-promotions .bonuses-and-promotions-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div div {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  min-width: 242px;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient(135deg, #252525, #333333);
+  box-shadow: 0 6px 12px rgba(202, 159, 50, 0.2);
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div div h3 {
+  color: #ca9f32;
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div div h3 span {
+  background-image: url(/public/yellow-arrow.svg);
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div .sa {
+  width: 91.8%;
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div h3 {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  color: black;
+  align-items: center;
+  gap: 20px;
+  font-size: clamp(15px, 4.5vw, 20px);
+}
+.bonuses-and-promotions .bonuses-and-promotions-container div p {
+  font-size: clamp(12px, 4.5vw, 15px);
+  padding: 0px 15px;
+  margin-top: 0;
+}
+
+.bonuses-and-promotions {
+  padding-top: 30px;
+}
+.bonuses-and-promotions .bonuses-and-promotions-intro h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+.bonuses-and-promotions .bonuses-and-promotions-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.how-to-start .how-to-start-intro h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+.how-to-start .how-to-start-intro h2 span {
+  font-weight: 700;
+}
+.how-to-start .how-to-start-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.how-to-start a {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  font-size: clamp(15px, 3vw, 18px);
+  border: #ca9f32 solid 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 40px;
+}
+.how-to-start a:hover {
+  background: linear-gradient(180deg, #F0D670 0%, #BB891A 70.86%);
+  color: black;
+}
+
+.how-to-start-list {
+  list-style: none;
+  padding: 0;
+  flex-basis: 50%;
+}
+.how-to-start-list li {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.how-to-start-list li .how-to-start-list-img {
+  display: flex;
+  justify-content: center;
+}
+.how-to-start-list li .how-to-start-list-img img {
+  border: 2px solid #ca9f32;
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.how-to-start-list li .how-to-start-list-img img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0 0 8px 1px #ca9f32;
+}
+.how-to-start-list li h3 {
+  font-size: clamp(20px, 5vw, 34px);
+  font-weight: 500;
+}
+.how-to-start-list li p {
+  font-size: clamp(15px, 3vw, 18px);
+  padding-left: 15px;
+}
+
+.khelostar-mobile-app-intro h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+  font-weight: 700;
+}
+.khelostar-mobile-app-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.khelostar-mobile-app .khelostar-mobile-app-list {
+  list-style: none;
+  padding: 0;
+}
+.khelostar-mobile-app .khelostar-mobile-app-list li {
+  border: 2px solid #ca9f32;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.khelostar-mobile-app .khelostar-mobile-app-list li:hover {
+  border: 2px solid #ca9f32;
+  box-shadow: 0 0 15px 1px #ca9f32;
+  transition: 0.3s;
+}
+.khelostar-mobile-app .khelostar-mobile-app-list li:hover h3 {
+  color: #ca9f32;
+}
+.khelostar-mobile-app .khelostar-mobile-app-list li h3 {
+  font-size: clamp(20px, 5vw, 34px);
+  font-weight: 700;
+}
+.khelostar-mobile-app .khelostar-mobile-app-list li p {
+  font-size: clamp(15px, 3vw, 18px);
+  padding-left: 15px;
+}
+
+.faq {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 50px;
+}
+.faq h2 {
+  color: white;
+  font-size: clamp(24px, 4.5vw, 38px);
+  margin-bottom: 35px;
+}
+.faq .faq-question {
+  border-radius: 15px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: clamp(15px, 3vw, 18px);
+  margin-top: 0px;
+  color: #ca9f32;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+.faq .faq-question:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ca9f32;
+  color: white;
+  transition: 0.3s;
+}
+.faq .faq-question:hover .question-text {
+  border-top: 2px solid #ca9f32;
+}
+.faq .faq-question .title-question-plus {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  gap: 20px;
+}
+.faq .faq-question .title-question-plus h3 {
+  padding-left: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.faq .faq-question .title-question-plus .anim-krest {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: 0.3s;
+}
+.faq .faq-question .title-question-plus .anim-krest img {
+  width: 24px;
+  height: 28px;
+}
+.faq .faq-question .title-question-plus .anim-krest.active {
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+.faq .faq-question .question-text {
+  padding-bottom: 20px;
+  border-top: solid white 2px;
+  border-radius: 0px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  display: none;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.faq .faq-question .question-text.active {
+  display: block;
+  transition: 0.3s;
+}
+
+.player-reviews {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 0px;
+  margin-bottom: 100px;
+}
+.player-reviews h4 {
+  font-size: clamp(16px, 3.5vw, 28px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.player-reviews .player-reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-top: 50px;
+}
+.player-reviews .player-reviews-container .revie-block {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 285px;
+  max-width: 300px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.player-reviews .player-reviews-container .revie-block div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.player-reviews .player-reviews-container .revie-block div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.player-reviews .player-reviews-container .revie-block div span {
+  color: #1a1a1a;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.player-reviews .player-reviews-container .revie-block p {
+  color: #1a1a1a;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.payments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a1a, #444444);
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  padding-bottom: 40px;
+  transition: 0.3s;
+}
+.payments .games-prov {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px 0;
+}
+.payments .games-prov .games-prov-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 30s linear infinite;
+  gap: 45px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.payments .games-prov .games-prov-carousel img {
+  flex: 1;
+  width: 160px;
+  height: 30px;
+}
+.payments .games-prov .games-prov-carousel .bets {
+  width: 70px;
+}
+.payments .games-prov .games-prov-carousel .as {
+  width: 70px;
+  height: 30px;
+}
+.payments h4 {
+  font-size: 17.5px;
+  color: white;
+}
+.payments .payments-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.payments .payments-container img {
+  width: 90px;
+  height: 37px;
+}
+.payments .payments-container .gg {
+  height: 45px;
+}
+.payments .payments-container .ms {
+  height: 28px;
+}
+.payments .payments-container .sas {
+  height: 31px;
+}
+.payments .payments-container .sma {
+  height: 17px;
+}
+
+.scroll-btn {
+  position: fixed;
+  z-index: 1000;
+  top: 90%;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: white;
+  min-height: 50px;
+  border-radius: 15px;
+  color: yellow;
+  display: none;
+}
+.scroll-btn div {
+  transform: rotate(-90deg);
+  height: 34px;
+  width: 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/public/black-arrpw.svg);
+  transition: 0.3s;
+}
+.scroll-btn:hover {
+  color: yellow;
+  transition: 0.3s;
+  background: linear-gradient(135deg, #252525, #333333);
+}
+.scroll-btn:hover div {
+  background-image: url(/public/yellow-arrow.svg);
+  transition: 0.3s;
+}
+
+.header {
+  min-height: 115px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-bottom: #ca9f32 1px solid;
+  padding-bottom: 10px;
+}
+.header .header-nav {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-nav .header-logo img {
+  cursor: pointer;
+  width: 160px;
+  min-height: 50px;
+}
+.header-nav .header-nav-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+.header-nav .header-nav-btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 30px;
+  border: #ca9f32 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: clamp(12px, 5vw, 14px);
+  font-weight: 700;
+}
+.header-nav .header-nav-btns a:hover {
+  background: linear-gradient(180deg, #F0D670 0%, #BB891A 70.86%);
+  color: black;
+}
+
+.footer {
+  margin-top: 50px;
+  border-top: #ca9f32 1px solid;
+  width: 100%;
+}
+.footer .footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 30px 20px 0px;
+}
+.footer .footer-container .footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-logo a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-logo a img {
+  width: 160px;
+  min-height: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-nav-social-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-container .footer-nav-social-container .footer-nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-nav-social-container .footer-nav a {
+  cursor: pointer;
+  font-size: clamp(16px, 4vw, 26px);
+  font-weight: 500;
+}
+.footer .footer-container .footer-nav-social-container .footer-nav a:hover {
+  color: #ca9f32;
+}
+.footer .footer-container .footer-nav-social-container .footer-social-networks {
+  flex: 1;
+}
+.footer .footer-container .footer-nav-social-container .footer-social-networks .footer-social-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-nav-social-container .footer-social-networks .footer-social-container span {
+  font-size: clamp(16px, 4vw, 26px);
+  font-weight: 700;
+}
+.footer .footer-container .footer-nav-social-container .footer-social-networks .footer-social-container div {
+  width: 100%;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-nav-social-container .footer-social-networks .footer-social-container div a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer .footer-container .footer-nav-social-container .footer-social-networks .footer-social-container div a img {
+  max-width: 21px;
+  max-height: 21px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .footer-container .footer-nav-social-container .footer-social-networks .footer-social-container div a:hover {
+  background: linear-gradient(180deg, #F0D670 0%, #BB891A 70.86%);
+}
+.footer .footer-copy-info {
+  color: white;
+  padding-top: 50px;
+  opacity: 80%;
+  padding-left: 15px;
+  border-top: #ca9f32 1px solid;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 450px) {
+  .header .header-nav .header-nav-btns {
+    justify-content: center;
+  }
+  .header .header-nav .header-nav-btns a {
+    width: 23%;
+  }
+  .popular-slots-imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 15px;
+    padding-right: 5px;
+  }
+  .popular-slots-imgs-container div {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .popular-slots-imgs-container div img {
+    width: 23%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .popular-slots-imgs-container div img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+    position: relative;
+    z-index: 0;
+  }
+  .how-to-start a {
+    width: 25%;
+  }
+  .how-to-start .how-to-start-list li .how-to-start-list-img img {
+    width: 70%;
+  }
+  .top-section-content {
+    width: 90%;
+  }
+  .top-section-content a {
+    width: 30%;
+  }
+  .wrapper-page .wrapper-content .main-content .our-sections {
+    width: 80%;
+  }
+  .wrapper-page .wrapper-content .main-content .our-sections .popular-sections-content div div img {
+    width: 70%;
+  }
+  .wrapper-page .wrapper-content .terms-sect {
+    width: 80%;
+  }
+  .wrapper-page .wrapper-content .privacy {
+    width: 80%;
+  }
+  .top-section-content a {
+    width: 20%;
+  }
+  .khelostar-live-betting-current div img {
+    width: 70%;
+  }
+  .cricket-betting div img {
+    width: 70%;
+  }
+  .footbal-betting div img {
+    width: 70%;
+  }
+  .tennis-betting div img {
+    width: 70%;
+  }
+  .bonuses-list li div img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 950px) {
+  .header .header-nav .header-nav-btns {
+    justify-content: center;
+  }
+  .header .header-nav .header-nav-btns a {
+    width: 15%;
+  }
+  .header {
+    min-height: 115px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: #ca9f32 2px solid;
+    padding-bottom: 10px;
+  }
+  .header .header-nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .header-nav .header-nav-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: end !important;
+  }
+  .header-nav .header-nav-btns a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 30px;
+    border: #ca9f32 2px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: clamp(12px, 5vw, 14px);
+    font-weight: 700;
+  }
+  .top-section-content {
+    width: 81%;
+  }
+  .top-section-content a {
+    margin-top: 90px;
+  }
+  .popular-sections .popular-sections-content .casino-games div img {
+    width: 70% !important;
+  }
+  .popular-slots-imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 15px;
+    padding-right: 5px;
+  }
+  .popular-slots-imgs-container div {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .popular-slots-imgs-container div img {
+    width: 8%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    flex: 1;
+  }
+  .popular-slots-imgs-container div img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 12px 42px rgba(202, 159, 50, 0.2);
+    position: relative;
+    z-index: 0;
+  }
+  .footer .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 30px 20px 0px;
+  }
+  .footer .footer-container .footer-nav-social-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .footer .footer-container .footer-nav-social-container .footer-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .footer .footer-container .footer-nav-social-container .footer-nav a {
+    cursor: pointer;
+    font-size: clamp(16px, 4vw, 26px);
+    font-weight: 500;
+  }
+  .footer .footer-container .footer-nav-social-container .footer-nav a:hover {
+    color: #ca9f32;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .header {
+    min-height: 115px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: #ca9f32 2px solid;
+    padding-bottom: 10px;
+  }
+  .header .header-nav {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .footer {
+    margin-top: 50px;
+    border-top: #ca9f32 2px solid;
+    width: 100%;
+  }
+  .footer .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 30px 20px 0px;
+  }
+  .footer .footer-container .footer-logo {
+    flex: 0.34;
+    display: flex;
+    justify-content: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .footer .footer-container .footer-logo a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .footer .footer-container .footer-logo a img {
+    width: 160px;
+    min-height: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .footer .footer-container .footer-nav-social-container .footer-nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+  }
+  .top-section-content {
+    width: 1200px;
+  }
+  .wrapper-page .wrapper-content .main-content .our-sections {
+    width: 1200px;
+  }
+  .wrapper-page .wrapper-content .main-content .our-sections .popular-sections-content div div img {
+    width: 85%;
+  }
+  .wrapper-page .wrapper-content .terms-sect {
+    width: 1200px;
+  }
+  .wrapper-page .wrapper-content .privacy {
+    width: 1200px;
+  }
+  .top-section-content a {
+    width: 20%;
+  }
+  .khelostar-live-betting-current div img {
+    width: 85%;
+  }
+  .cricket-betting div img {
+    width: 85%;
+  }
+  .footbal-betting div img {
+    width: 85%;
+  }
+  .tennis-betting div img {
+    width: 85%;
+  }
+  .bonuses-list li div img {
+    width: 85%;
+  }
+}
+.privacy {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+.privacy .privacy-intro h1 {
+  font-size: clamp(28px, 5vw, 48px);
+}
+.privacy .privacy-intro h1 span {
+  font-weight: 700;
+}
+.privacy .privacy-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.we-collect h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+
+.personal-inf h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.personal-inf div {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.personal-inf ul {
+  list-style: none;
+  padding: 0;
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.gameplay-inf h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.gameplay-inf div {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.gameplay-inf ul {
+  list-style: none;
+  font-size: clamp(15px, 3vw, 18px);
+  padding: 0;
+}
+
+.gameplay-inf h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.gameplay-inf div {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.gameplay-inf ul {
+  list-style: none;
+  font-size: clamp(15px, 3vw, 18px);
+  padding: 0;
+}
+
+.tech-inf h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.tech-inf div {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.tech-inf ul {
+  list-style: none;
+  font-size: clamp(15px, 3vw, 18px);
+  padding: 0;
+}
+
+.how-we-use h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.how-we-use .how-use-desk {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.how-we-use h4 {
+  font-size: clamp(16px, 3.5vw, 28px);
+}
+.how-we-use ul {
+  list-style: none;
+  padding: 0;
+  font-size: clamp(15px, 3vw, 18px);
+}
+.how-we-use ul li {
+  padding-top: 5px;
+}
+.how-we-use .legal-desk {
+  font-size: clamp(15px, 3vw, 18px);
+}
+
+.how-we-share {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.how-we-share h3 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+.how-we-share ul {
+  list-style: none;
+  padding: 0;
+}
+.how-we-share ul li h4 {
+  font-size: clamp(16px, 3.5vw, 28px);
+}
+.how-we-share ul li ul {
+  list-style: none;
+  padding: 0;
+}
+
+.your-privacy-right {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.your-privacy-right h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.your-privacy-right ul {
+  list-style: none;
+  padding: 0;
+}
+.your-privacy-right h4 {
+  font-size: clamp(16px, 3.5vw, 28px);
+}
+
+.terms-sect {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  font-size: clamp(15px, 3vw, 18px);
+}
+.terms-sect .terms-intro h1 {
+  font-size: clamp(28px, 5vw, 48px);
+}
+.terms-sect .terms-intro p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.terms-sect p {
+  font-size: clamp(15px, 3vw, 18px);
+}
+.terms-sect ul {
+  list-style: none;
+  padding: 0;
+}
+.terms-sect h2 {
+  font-size: clamp(24px, 4.5vw, 38px);
+}
+.terms-sect h3 {
+  font-size: clamp(20px, 5vw, 34px);
+}
+.terms-sect strong {
+  padding-top: 10px;
+}/*# sourceMappingURL=scss.css.map */
